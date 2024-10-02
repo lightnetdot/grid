@@ -1,0 +1,129 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF2F8;
+}
+
+.container {
+    width: 80%;
+    height: 90vh;
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira"
+    ;
+    row-gap: 24px;
+    column-gap: 30px;
+}
+
+.commonStyles {
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imageText {
+    display: flex;
+    gap: 16px;
+}
+
+.name {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+}
+
+.name2 {
+    color: #48556A;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.status {
+    color: #FFF;
+    opacity: 0.5;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.status2 {
+    color: #48556A;
+    opacity: 0.5;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.mainText {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.mainText2 {
+    color: #48556A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.secondaryText {
+    color: #CFCFCF;
+    opacity: 0.7;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.secondaryText2 {
+    color: #48556A;
+    opacity: 0.7;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.div1 {
+    grid-area: daniel;
+    background-color:  #733FC8;
+}
+
+.div2 {
+    grid-area: jonathan;
+    background-color:  #48556A;
+}
+
+.div3 {
+    grid-area: kira;
+    background-color:  #FFFFFF;
+}
+
+.div4 {
+    grid-area: jeanette;
+    background-color:  #FFFFFF;
+}
+
+.div5 {
+    grid-area: patrick;
+    background-color:  #19202D;
+}
+
